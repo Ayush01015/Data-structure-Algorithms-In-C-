@@ -1,0 +1,2 @@
+    removeLast(&start);
+    view(start);
