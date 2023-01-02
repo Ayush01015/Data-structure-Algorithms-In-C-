@@ -22,8 +22,8 @@ void insert(struct Queue *q,int data)
     if(q->front==-1)
     {   //empty
 
-        q->rear+=1;
-        q->front+=1;
+        q->rear=0;
+        q->front=0;
         q->ptr[q->rear]=data;
     }
     else if((q->rear==q->capacity-1&&q->front==0)||(q->rear==q->front-1))
